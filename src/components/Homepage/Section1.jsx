@@ -1,9 +1,9 @@
 import React from 'react'
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import "./section1.scss"
+import Explore from './Explore';
 const Section1 = () => {
   return (
-    <div className="hero-banner flex flex-col items-center pt-20 h-screen ">
+    <div className="hero-banner flex flex-col items-center pt-20 h-[500px] ">
       <div className="hero-heading flex flex-col items-center">
         <h1 className="text-5xl font-bold text-red-500 my-4">Marketing</h1>
         <h1 className="text-5xl font-bold">
@@ -21,12 +21,7 @@ const Section1 = () => {
       <div className="hero-subheading my-8 font-medium opacity-90">
         Lorem ipsum is simply dummy text of printing and typesetting industry.
       </div>
-      <div className="explore flex items-center gap-2 ">
-        <div className="circle h-6 bg-red-200 rounded-[50%] w-6 "></div>
-        <h1>
-          Explore <ArrowRightAltIcon></ArrowRightAltIcon>{" "}
-        </h1>
-      </div>
+    <Explore text="Explore"></Explore>
     </div>
   );
 }
