@@ -6,7 +6,7 @@ const Section2 = () => {
   return (
     <div className="h-[400px]">
       <div className=" bg-gray-100 h-[320px]  w-screen flex items-center justify-center gap-12 ">
-        <div className="py-8  m-8   left-circle bg-red-600 h-[260px] w-[260px] rounded-[50%] text-white flex justify-center items-center">
+        <div className="py-8  m-8   left-circle bg-main-red h-[260px] w-[260px] rounded-[50%] text-white flex justify-center items-center">
           <div>
             <h1 className="text-xl p-8 px-12">
               <span className="font-bold">We are creators.</span> The

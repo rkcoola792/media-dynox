@@ -6,7 +6,7 @@ const Cards = ({title,first,second,third,fourth}) => {
     <div className="w-[200px] h[300px] flex flex-col gap-6 border border-gray-300 px-6 py-8">
       <div className="flex gap-1 items-start">
         <span className="text-xl font-bold">{title}</span>
-        <span className="text-red-500 text-xl font-extrabold ">.</span>
+        <span className="text-main-red text-xl font-extrabold ">.</span>
       </div>
 
       <div className="subheading flex flex-col gap-2">

@@ -5,24 +5,29 @@ const Header = () => {
     const [openCompany,setOpenCompany]=useState(false)
     const [openServices,setOpenServices]=useState(true)
   return (
-    <div className="header flex justify-between px-24 py-8 items-center">
-      <div className="left logo font-bold text-xl">
-        Media Dynox<span className="text-red-500 font-bold text-2xl">.</span>
+    <div className="header flex justify-between px-24 py-8 items-center sticky top-0 bg-slate-50 z-10">
+      <div className="left logo font-bold text-xl lg:text-3xl">
+        Media Dynox
+        <span className="text-main-red font-bold text-2xl lg:text-3xl ">.</span>
       </div>
       <div className="right-header-elements flex gap-16 items-center">
-        <h1>Home</h1>
+        <h1 className="lg:text-xl">Home</h1>
         <div className="company flex items-center">
-          <span>Company</span>
+          <span className="lg:text-xl">Company</span>
           &nbsp;
-          <span className="text-red-500 font-extrabold mb-1">.</span>
+          <span className="text-main-red font-extrabold mb-1 className='lg:text-xl'">
+            .
+          </span>
         </div>
-        <div className="services flex items-center">
+        <div className="services flex items-center lg:text-xl">
           <span>Services</span>
           &nbsp;
-          <span className="text-red-500 font-extrabold mb-1 ">{openServices?".":"."}</span>
+          <span className="text-main-red font-extrabold mb-1 ">
+            {openServices ? "." : "."}
+          </span>
         </div>
-        <h1>Blogs</h1>
-        <h1>Reach Us</h1>
+        <h1 className='lg:text-xl'>Blogs</h1>
+        <h1 className='lg:text-xl'>Reach Us</h1>
       </div>
     </div>
   );
