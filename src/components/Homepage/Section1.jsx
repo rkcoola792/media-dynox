@@ -4,7 +4,7 @@ import Explore from './Explore';
 const Section1 = () => {
   return (
     <div className=''> 
-      <div className="hero-banner flex flex-col items-center pt-20 h-[500px] ">
+      <div className="hero-banner flex flex-col items-center pt-20 h-[470px] ">
         <div className="hero-heading flex flex-col items-center relative">
           <h1 className=" lg:text-7xl text-5xl font-bold text-main-red my-4">
             Marketing
