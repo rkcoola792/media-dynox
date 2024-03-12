@@ -5,7 +5,7 @@ import Explore from './Explore';
 const Section2 = () => {
   return (
     <div className=" bg-gray-100 h-[500px]  w-screen flex items-center justify gap-12 px-24 ">
-      <div className="p-4 circle bg-main-red lg:h-[330px] lg:w-[330px] h-[300px] w-[300px] rounded-[50%] text-white flex justify-center items-center text-center">
+      <div className="p-4 circle bg-mainred lg:h-[330px] lg:w-[330px] h-[300px] w-[300px] rounded-[50%] text-white flex justify-center items-center text-center">
         <div>
           <h1 className="lg:text-3xl text-xl p-6 px-8">
             <span className="font-bold">We are creators.</span> The masterminds
