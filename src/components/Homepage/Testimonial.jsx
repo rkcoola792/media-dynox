@@ -9,7 +9,7 @@ const Testimonial = ({name,country,description}) => {
         <p className='text-gray-700 tracking-wider'>{country}</p>
       </div>
       <div className="lower text-center w-[60%] flex justify-center">
-        <p>{description}</p>
+        <p className='leading-7 text-gray-700'> {description}</p>
       </div>
     </div>
   );
