@@ -5,3 +5,22 @@ width: 5rem;
 height: 5rem; 
 margin: 0 10px 0 10px;
 }
+
+.testimonials{
+
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+ 
+        
+ 
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+ 
+            100% {
+                opacity: 1;
+            }
+        }

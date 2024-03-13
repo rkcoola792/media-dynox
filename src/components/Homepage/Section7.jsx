@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./section7.scss";
 import Testimonial from "./Testimonial";
-
 const Section7 = () => {
 
     const users = [
@@ -27,31 +26,31 @@ const Section7 = () => {
         name: "Grace Lewiston",
         country: "Paris, France",
         description:
-          "A big thank you to [Digital Media Company] for their exceptional service! Their tailored strategies and data-driven approach optimized our digital presence, resulting in significant growth and customer acquisition. Their team's passion and expertise shine through in every interaction. Highly recommended for transformative digital solutions!",
+          "A big thank you to Media Dynox for their exceptional service! Their tailored strategies and data-driven approach optimized our digital presence, resulting in significant growth and customer acquisition. Their team's passion and expertise shine through in every interaction. Highly recommended for transformative digital solutions!",
       },
       {
         name: "Matthew Perry",
         country: "America USA",
         description:
-          "Kudos to [Digital Media Company] for their outstanding work! Their innovative strategies and unmatched creativity breathed new life into our digital platforms, capturing our audience's attention and driving engagement. Their team's dedication and expertise make them an invaluable asset for any business looking to thrive online.",
+          "Kudos to Media Dynox for their outstanding work! Their innovative strategies and unmatched creativity breathed new life into our digital platforms, capturing our audience's attention and driving engagement. Their team's dedication and expertise make them an invaluable asset for any business looking to thrive online.",
       },
       {
         name: "Tom cruise",
         country: "Italy, EU",
         description:
-          "Impressed by the impact of [Digital Media Company]! Their tailored solutions and proactive approach enhanced our online visibility, yielding tangible business growth. Their team's expertise and attention to detail ensured a seamless experience. Trustworthy, reliable, and results-driven – they exceeded our expectations!",
+          "Impressed by the impact of Media Dynox! Their tailored solutions and proactive approach enhanced our online visibility, yielding tangible business growth. Their team's expertise and attention to detail ensured a seamless experience. Trustworthy, reliable, and results-driven – they exceeded our expectations!",
       },
       {
         name: "Jennifer Lawrence",
         country: "America USA",
         description:
-          "Exceptional results delivered by [Digital Media Company]! Their strategic insights and flawless execution elevated our digital presence, driving increased traffic and conversions. Their team's professionalism and commitment to excellence set them apart in the industry. Highly recommended for anyone serious about digital success!",
+          "Exceptional results delivered by Media Dynox! Their strategic insights and flawless execution elevated our digital presence, driving increased traffic and conversions. Their team's professionalism and commitment to excellence set them apart in the industry. Highly recommended for anyone serious about digital success!",
       },
       {
         name: "Robert Downey",
         country: "Dubai, UAE ",
         description:
-          "Working with [Digital Media Company] was a game-changer! Their innovative approach and attentive support resulted in tangible growth for our brand. Their team's dedication and expertise exceeded our expectations, making them an invaluable partner in our digital journey. Trust them for unparalleled results!",
+          "Working with Media Dynox was a game-changer! Their innovative approach and attentive support resulted in tangible growth for our brand. Their team's dedication and expertise exceeded our expectations, making them an invaluable partner in our digital journey. Trust them for unparalleled results!",
       },
     ];
 
@@ -79,10 +78,11 @@ console.log("user",users[1].name)
           <span className="font-semibold">Hear</span> what we say{" "}
         </h1>
       </div>
+
       <div className="mid-image-container flex gap-6 items-center ">
         <div
           id="1"
-          className="avatar object-cover rounded-[50%] flex justify-center items-center active "
+          className="avatar object-cover rounded-[50%] flex justify-center items-center active cursor-pointer "
           onClick={() => setNumber("1")}
         >
           <img src="/av2.png" className="h-16 w-16 rounded-[50%] " alt="" />
@@ -90,47 +90,47 @@ console.log("user",users[1].name)
         <div
           id="2"
           onClick={() => setNumber(2)}
-          className="avatar object-cover rounded-[50%] flex justify-center items-center mt-8"
+          className="avatar object-cover rounded-[50%] flex justify-center items-center mt-8 cursor-pointer"
         >
           <img src="/av3.webp" className="h-16 w-16 rounded-[50%] " alt="" />
         </div>
         <div
           id="3"
           onClick={() => setNumber("3")}
-          className="avatar object-cover rounded-[50%] flex justify-center items-center "
+          className="avatar cursor-pointer object-cover rounded-[50%] flex justify-center items-center "
         >
           <img src="/av4.jpg" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
         <div
           id="4"
           onClick={() => setNumber("4")}
-          className="avatar object-cover rounded-[50%] mt-8 flex justify-center items-center"
+          className="avatar object-cover cursor-pointer rounded-[50%] mt-8 flex justify-center items-center"
         >
           <img src="/av9.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
         <div
           id="5"
           onClick={() => setNumber("5")}
-          className="avatar object-cover rounded-[50%] flex justify-center items-center"
+          className="avatar object-cover rounded-[50%] cursor-pointer flex justify-center items-center"
         >
           <img src="/av6.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
         <div
           id="6"
           onClick={() => setNumber("6")}
-          className=" avatar object-cover rounded-[50%] mt-8 flex justify-center items-center"
+          className=" avatar object-cover rounded-[50%] mt-8 flex cursor-pointer justify-center items-center"
         >
           <img src="/av7.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
         <div
           id="7"
           onClick={() => setNumber("7")}
-          className=" avatar object-cover rounded-[50%] flex justify-center items-center"
+          className=" avatar object-cover rounded-[50%] flex justify-center cursor-pointer items-center"
         >
           <img src="/av8.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
       </div>
-      <div className="bottom-container">
+      <div className="bottomContainer">
         <Testimonial
           name={users[number]?.name}
           country={users[number]?.country}
