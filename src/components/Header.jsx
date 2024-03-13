@@ -6,28 +6,36 @@ const Header = () => {
     const [openServices,setOpenServices]=useState(true)
   return (
     <div className="header flex justify-between px-24 py-8 items-center sticky top-0 bg-slate-50 z-10">
-      <div className="left logo font-bold text-xl lg:text-3xl">
+      <div className="left logo font-bold text-xl lg:text-3xl cursor-pointer">
         Media Dynox
         <span className="text-mainred font-bold text-2xl lg:text-3xl ">.</span>
       </div>
       <div className="right-header-elements flex gap-16 items-center">
-        <h1 className="lg:text-xl">Home</h1>
+        <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
+          Home
+        </h1>
         <div className="company flex items-center">
-          <span className="lg:text-xl">Company</span>
+          <span className="lg:text-lg cursor-pointer  transition duration-450 ease-out hover:ease-in hover:text-mainred font-semibold">
+            Company
+          </span>
           &nbsp;
-          <span className="text-mainred font-extrabold mb-1 className='lg:text-xl'">
+          <span className=" cursor-pointer text-mainred font-extrabold mb-1 className='lg:text-lg'">
             .
           </span>
         </div>
-        <div className="services flex items-center lg:text-xl">
+        <div className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer">
           <span>Services</span>
           &nbsp;
           <span className="text-mainred font-extrabold mb-1 ">
             {openServices ? "." : "."}
           </span>
         </div>
-        <h1 className='lg:text-xl'>Blogs</h1>
-        <h1 className='lg:text-xl'>Reach Us</h1>
+        <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
+          Blogs
+        </h1>
+        <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
+          Reach Us
+        </h1>
       </div>
     </div>
   );

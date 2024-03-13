@@ -5,7 +5,7 @@ import Explore from './Explore';
 const Section2 = () => {
   return (
     <div className=" bg-gray-100 h-[500px]  w-screen flex items-center justify gap-12 px-24 ">
-      <div className="p-4 circle bg-mainred lg:h-[330px] lg:w-[330px] h-[300px] w-[300px] rounded-[50%] text-white flex justify-center items-center text-center">
+      <div className="p-4 circle bg-mainred lg:h-[330px] lg:w-[330px] h-[300px] w-[300px] rounded-[50%] text-white flex justify-center items-center text-center hover:bg-[#222] transition duration-450 ease-out hover:ease-in cursor-pointer">
         <div>
           <h1 className="lg:text-3xl text-xl p-6 px-8">
             <span className="font-bold">We are creators.</span> The masterminds
@@ -22,7 +22,7 @@ const Section2 = () => {
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
-       <Explore text="Explore"></Explore>
+        <Explore text="Explore"></Explore>
       </div>
 
       <div className="right-details flex flex-col gap-6 w-[300px] ">
