@@ -1,7 +1,7 @@
 import React from 'react'
 import Explore from './Explore';
 
-const Cards = ({title,first,second,third,fourth}) => {
+const Cards = ({title,first,second,third,fourth,color}) => {
   return (
     <div className=" sm:w-[200px] xl:w-[250px] md:w-[350px]  flex flex-col  gap-6 border border-gray-300 px-8 py-8 cursor-pointer hover:bg-mainred hover:text-white transition duration-450 ease-out hover:ease-in">
       <div className="flex gap-1 items-start">
@@ -19,7 +19,7 @@ const Cards = ({title,first,second,third,fourth}) => {
         <hr />
         <h3 className="text-sm lg:text-base font-semibold ">{fourth}</h3>
       </div>
-      <Explore text="Read more"></Explore>
+      <Explore text="Read more" size="" color="" hoverColor="white"></Explore>
     </div>
   );
 }

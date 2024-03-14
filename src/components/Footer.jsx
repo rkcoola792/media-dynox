@@ -98,10 +98,10 @@ const Footer = () => {
             <hr />
           </div>
           <div className="ctas flex gap-2">
-            <div className=" ">
+            <div className="scale-90">
               <Explore text="Contact Us" size="sm"></Explore>
             </div>
-            <div>
+            <div className='scale-90'>
               <Explore text="Schedule a meeting" size="sm"></Explore>
             </div>
           </div>

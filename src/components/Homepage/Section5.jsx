@@ -17,7 +17,7 @@ const Section5 = () => {
       <div className='scroll'>
 <InfiniteScroll></InfiniteScroll>
       </div>
-      <Explore text="Read More" color="white"></Explore>
+      <Explore text="Read More" color="white" hoverColor="white"></Explore>
     </div>
   );
 }

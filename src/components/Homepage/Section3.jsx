@@ -15,16 +15,36 @@ const Section3 = () => {
         built for your
       </h3>
       <div className="cards flex gap-4 flex-wrap justify-center">
+        <div className='hover:bg-white'>
+          <Cards
+            title="Design"
+            first="Graphic Designing"
+            second="Branding Designing"
+            third="UI/UX Designing"
+            fourth="Web Designing"
+          ></Cards>
+        </div>
         <Cards
-          title="Design"
-          first="Graphic Designing"
-          second="Branding Designing"
-          third="UI/UX Designing"
-          fourth="Web Designing"
+          title="Technology"
+          first="Web Development"
+          second="App Development"
+          third="Software Development"
+          fourth="IOS Development"
         ></Cards>
-        <Cards title="Technology" first="Web Development" second="App Development" third="Software Development" fourth="IOS Development"></Cards>
-        <Cards title="Business" first="Branding" second="Strategy & Planning" third="Public Relation" fourth="Programmatic"></Cards>
-        <Cards title="Marketing" first="Social Media" second="Paid Media" third="Digital Marketing" fourth="S.E.O"></Cards>
+        <Cards
+          title="Business"
+          first="Branding"
+          second="Strategy & Planning"
+          third="Public Relation"
+          fourth="Programmatic"
+        ></Cards>
+        <Cards
+          title="Marketing"
+          first="Social Media"
+          second="Paid Media"
+          third="Digital Marketing"
+          fourth="S.E.O"
+        ></Cards>
       </div>
       <Explore text="Explore all Services"></Explore>
     </div>
