@@ -29,25 +29,65 @@ const Homepage = () => {
     <div className="Homepage scroll-smooth">
       <Section1></Section1>
       <motion.div
-      ref={ref}
-      variants={{
-        hidden:{opacity:0 ,y:75},
-        visible:{opacity:1,y:0}
-      }}
-      initial="hidden"
-      animate={mainControls}
-      transition={{duration:0.5,delay:0.25}}
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
       >
         <Section2></Section2>
       </motion.div>
 
-      <Section3></Section3>
-      <Section4></Section4>
-      <Section5></Section5>
-      <Section6></Section6>
-      <Section7></Section7>
-      <Section8></Section8>
-      <Section9></Section9>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section3></Section3>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section4></Section4>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section5></Section5>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section6></Section6>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section7></Section7>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section8></Section8>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Section9></Section9>
+      </motion.div>
     </div>
   );
 }

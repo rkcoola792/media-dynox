@@ -3,7 +3,7 @@ import Explore from './Explore';
 
 const Section8 = () => {
   return (
-    <div className="section-8 flex gap-6 px-24 pr-36 mt-24 h-[520px] justify-center items-center">
+    <div className="section-8 flex gap-6 px-24 pr-36 mt-16 h-[520px] justify-center items-center">
       <div className="left w-[30%]  flex flex-col gap-44 ">
         <h1 className="text-4xl ">
           <span className="font-semibold">Explore</span> recent Blogs for a view

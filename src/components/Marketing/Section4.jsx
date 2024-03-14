@@ -2,6 +2,45 @@ import Step from '../Homepage/Step';
 import React from 'react'
 
 const Section4 = () => {
+    const steps = [
+      {
+        title: "Research",
+        subheading:
+          "Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help.",
+        step: "1",
+      },
+      {
+        title: "Create",
+        subheading:
+          "Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help.",
+        step: "2",
+      },
+      {
+        title: "Promote",
+        subheading:
+          "Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help.",
+        step: "3",
+      },
+      {
+        title: "Analyse",
+        subheading:
+          "Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help.",
+        step: "4",
+      },
+      {
+        title: "Optimize",
+        subheading:
+          "Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help.",
+        step: "5",
+      },
+      {
+        title: "Deploy & Run",
+        subheading:
+          "Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help.",
+        step: "6",
+      },
+     
+    ];
   return (
     <div className="section-4 px-24 mt-32">
       <div className="heading  flex flex-col gap-12">
@@ -17,62 +56,16 @@ const Section4 = () => {
         </p>
       </div>
       <div className="flex flex-wrap gap-12 mt-24">
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="1"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="2"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="3"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="4"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="5"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="6"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="7"
-          ></Step>
-        </div>
-        <div className="w-[45%]">
-          <Step
-            title="Research"
-            subheading="Tell us more about your business on a discovery call. We’ll discuss team structure and approach, success criteria, timescale, budget,and required skill sets to see how we can help."
-            step="8"
-          ></Step>
-        </div>
+          {steps?.map((ele) => (
+            <div className="w-[45%]" key={ele?.step}>
+              <Step
+                title={ele?.title}
+                subheading={ele?.subheading}
+                step={ele?.step}
+              ></Step>
+            </div>
+          ))}
+          
       </div>
     </div>
   );
