@@ -16,21 +16,21 @@ const Section6 = () => {
           <span className="font-semibold md:text-left sm:text-center">Our Process.</span> Simple Seamless
           and Streamlined.
         </h1>
-        <p className="text-gray-700">
+        <p className="text-gray-700 sm:text-justify">
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
       </div>
-      <div className="right md:w-1/2 sm:mt-12 md:mt-0 flex flex-col gap-6 pr-24 relative">
+      <div className="right md:w-1/2 sm:mt-12 md:mt-0 flex flex-col gap-6 pr-24  ml-24 relative">
         <Step title={stepTitles[0]} subheading={subheading} step="01"></Step>
         <Step title={stepTitles[1]} subheading={subheading} step="02"></Step>
         <Step title={stepTitles[2]} subheading={subheading} step="03"></Step>
-        <div className="sm:hidden md:block absolute vertical-dotted-line h-[97%] border border-gray-500 border-1 left-10 -z-10 top-2 border-dashed"></div>
+        <div className="sm:hidden md:block absolute vertical-dotted-line h-[97%] border border-gray-500 border-1 left-10 -z-10 top-2  border-dashed"></div>
         <div className="relative flex">
     
-          <div className="horizontal-border absolute h-0 w-20 border border-gray-500 border-1 left-10 bottom-3 -z-10  border-dashed"></div>
+          <div className="sm:hidden md:block horizontal-border absolute h-0 w-20 border border-gray-500 border-1 left-10 bottom-3 -z-10  border-dashed"></div>
           <div className="ml-32">
             <Explore text="Read More"></Explore>
           </div>
