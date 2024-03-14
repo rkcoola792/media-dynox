@@ -69,7 +69,7 @@ const Section7 = () => {
 console.log("count",number)
 console.log("user",users[1].name)
   return (
-    <div className="section-7 py-24 px-24 flex gap-12 text-center items-center bg-slate-100 h-[700px] mt-16 flex-col">
+    <div className="section-7 py-24 md:px-24 sm:px-12 flex gap-12 text-center items-center bg-slate-100 h-[700px] mt-16 flex-col">
       <div className="top">
         <h1 className="text-4xl mb-2 font-normal">
           <span className="font-semibold ">Customer</span> Voice :{" "}
@@ -79,13 +79,13 @@ console.log("user",users[1].name)
         </h1>
       </div>
 
-      <div className="mid-image-container flex gap-6 items-center ">
+      <div className="mid-image-container flex md:gap-6 sm:gap-0 items-center ">
         <div
           id="1"
-          className="avatar object-cover rounded-[50%] flex justify-center items-center active cursor-pointer "
+          className="avatar object-cover rounded-[50%] sm:h-12 sm:w-12 flex justify-center items-center active cursor-pointer "
           onClick={() => setNumber("1")}
         >
-          <img src="/av2.png" className="h-16 w-16 rounded-[50%] " alt="" />
+          <img src="/av2.png" className=" h-16 w-16 rounded-[50%] " alt="" />
         </div>
         <div
           id="2"
