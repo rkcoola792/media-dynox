@@ -1,11 +1,16 @@
-// .circle {
-//   height: 24px;
-//   width: 24px;
-//   border-radius: 24px;
-//   background-color: rgb(186, 12, 12);
-//   position: fixed; 
-//   top: 0;
-//   left: 0;
-//   pointer-events: none;
-//   // z-index: 10; /* so that it stays on top of all other elements */
+// @import "../../app.scss";
+.cursor{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    // background-color: red;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 90;
+    
+    // @include mobile{
+    // display: none;
+}
+
 // }
+

@@ -28,7 +28,7 @@ function App() {
   ]);
 
   return (
-    <div className="App">
+    <div className="App ">
       {/* <Cursor></Cursor> */}
       <RouterProvider router={router}></RouterProvider>
     </div>

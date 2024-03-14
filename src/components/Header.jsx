@@ -1,11 +1,19 @@
 import React, {  useState } from 'react'
 import { Link } from 'react-router-dom';
 import Dropdown from './Homepage/Dropdown';
+import { motion,useScroll,useSpring } from 'framer-motion';
 import "./pogressbar.scss"
 const Header = () => {
     const [openServices,setOpenServices]=useState(true)
     const [serviceDropdown,setServiceDropdown]=useState(false)
     const [reference,setReference]=useState("")
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
     function updateProgressBar() {
       const { scrollTop, scrollHeight } = document.documentElement;
@@ -19,7 +27,12 @@ const Header = () => {
     document.addEventListener("scroll", updateProgressBar);
   return (
     <>
-      <div id="progress-bar" className="transition duration-450 ease-out"></div>
+      <div
+      id="progress-bar"
+        className="progress-bar"
+        style={{ scaleX }}
+      ></div>
+
       <div className="header flex justify-between px-24 py-8 items-center sticky top-0 bg-slate-50 z-10">
         <div className="left logo font-bold text-xl lg:text-3xl cursor-pointer">
           Media Dynox
