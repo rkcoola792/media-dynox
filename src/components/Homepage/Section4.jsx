@@ -7,54 +7,55 @@ import {
 } from "@/components/ui/accordion";
 
 const Section4 = () => {
+  const accordianArray = [
+    {
+      title: "The Right People",
+      subheading:
+        "Yes, you can try us for free for 30 days. If you want, we ll provide you with a free, personalized 30 minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      title: "The Right Team",
+      subheading:
+        "Yes, you can try us for free for 30 days. If you want, we ll provide you with a free, personalized 30 minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      title: "The Right Time",
+      subheading:
+        "Yes, you can try us for free for 30 days. If you want, we ll provide you with a free, personalized 30 minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      title: "The Right Place",
+      subheading:
+        "Yes, you can try us for free for 30 days. If you want, we ll provide you with a free, personalized 30 minute onboarding call to get you up and running as soon as possible.",
+    },
+  ];
   return (
-    <div className="section-4 flex px-24 bg-slate-100  gap-16 py-24 mt-12">
-      <div className="left w-[30%] flex flex-col gap-8 ">
-        <h1 className="text-4xl leading-10 ">
+    <div className="section-4 md:flex px-24 bg-slate-100  gap-16 py-24 mt-12 items-center">
+      <div className="left md:w-[30%] text-center md:text-left flex flex-col gap-8 ">
+        <h1 className="xl:text-3xl sm:text-2xl lg:text-3xl leading-10 ">
           <span className="font-semibold">Execute</span> all your{" "}
           <span className="font-semibold">Business goals</span> in one place
         </h1>
-        <p className="text-gray-700">
+        <p className="text-gray-700 sm:text-sm xl:text-lg">
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
       </div>
-      <div className="accordion right w-[60%]">
-        <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="text-xl">
-              The Right People
+      <div className="accordion-right md:w-[60%] mt-8 md:mt-0">
+
+<Accordion type="single" collapsible className="w-full">
+{accordianArray?.map((ele,index)=>
+<AccordionItem value={`item-${index+1}`} key={index}>
+            <AccordionTrigger className="xl:text-xl sm:text-lg">
+              {ele?.title}
             </AccordionTrigger>
             <AccordionContent>
-              Yes, you can try us for free for 30 days. If you want, we ll
-              provide you with a free, personalized 30 minute onboarding call to
-              get you up and running as soon as possible.
+              {ele?.subheading}
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2 " className="text-xl">
-            <AccordionTrigger>The Right Team</AccordionTrigger>
-            <AccordionContent>
-              Yes, you can try us for free for 30 days. If you want, we ll
-              provide you with a free, personalized 30 minute onboarding call to
-              get you up and running as soon as possible.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3 " className="text-xl">
-            <AccordionTrigger>The Right Time</AccordionTrigger>
-            <AccordionContent>
-              Yes, you can try us for free for 30 days. If you want, we ll
-              provide you with a free, personalized 30 minute onboarding call to
-              get you up and running as soon as possible.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4 " className="text-xl">
-            <AccordionTrigger>The Right Place</AccordionTrigger>
-            <AccordionContent>
-              Yes, you can try us for free for 30 days. If you want, we ll
-              provide you with a free, personalized 30 minute onboarding call to
-              get you up and running as soon as possible.
-            </AccordionContent>
-          </AccordionItem>
+)}
+          
+          
         </Accordion>
       </div>
     </div>

@@ -3,7 +3,7 @@ import Explore from './Explore';
 
 const Cards = ({title,first,second,third,fourth}) => {
   return (
-    <div className="w-[200px] h[300px] lg:w-[250px] flex flex-col gap-6 border border-gray-300 px-8 py-8 cursor-pointer hover:bg-mainred hover:text-white transition duration-450 ease-out hover:ease-in">
+    <div className=" sm:w-[200px] xl:w-[250px] md:w-[350px]  flex flex-col  gap-6 border border-gray-300 px-8 py-8 cursor-pointer hover:bg-mainred hover:text-white transition duration-450 ease-out hover:ease-in">
       <div className="flex gap-1 items-start">
         <span className="text-xl lg:text-2xl font-semibold">{title}</span>
         <span className="text-mainred text-xl font-extrabold ">.</span>
