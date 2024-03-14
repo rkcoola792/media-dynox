@@ -8,10 +8,17 @@ import Section6 from './Section6'
 import Section7 from './Section7'
 import Section8 from './Section8'
 import Section9 from './Section9'
-
+import { motion, useScroll, useSpring } from "framer-motion";
 const Homepage = () => {
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001,
+    });
+
   return (
-    <div className='Homepage scroll-smooth'>
+    <div className='Homepage scroll-smooth' >
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>

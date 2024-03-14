@@ -1,16 +1,24 @@
-import React, { useRef, useState } from 'react'
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import React, {  useState } from 'react'
 import Dropdown from './Homepage/Dropdown';
-import { CleaningServices } from '@mui/icons-material';
-
+import "./pogressbar.scss"
 const Header = () => {
-    const [openCompany,setOpenCompany]=useState(false)
     const [openServices,setOpenServices]=useState(true)
     const [serviceDropdown,setServiceDropdown]=useState(false)
     const [reference,setReference]=useState("")
 
+    function updateProgressBar() {
+      const { scrollTop, scrollHeight } = document.documentElement;
+      const scrollPercent =
+        (scrollTop / (scrollHeight - window.innerHeight)) * 100 + "%";
+      document
+        .querySelector("#progress-bar")
+        .style.setProperty("--progress", scrollPercent);
+    }
+
+    document.addEventListener("scroll", updateProgressBar);
   return (
     <>
+      <div id="progress-bar" className="transition duration-450 ease-out"></div>
       <div className="header flex justify-between px-24 py-8 items-center sticky top-0 bg-slate-50 z-10">
         <div className="left logo font-bold text-xl lg:text-3xl cursor-pointer">
           Media Dynox
@@ -29,7 +37,6 @@ const Header = () => {
               console.log("id", e?.target?.id);
               setReference(e?.target?.id);
               setServiceDropdown(true);
-              
             }}
             onMouseLeave={() => setServiceDropdown(false)}
           >
@@ -40,7 +47,10 @@ const Header = () => {
               Company
             </span>
             &nbsp;
-            <span className="cursor-pointer text-mainred font-extrabold mb-1 " id="Company">
+            <span
+              className="cursor-pointer text-mainred font-extrabold mb-1 "
+              id="Company"
+            >
               .
             </span>
           </div>
@@ -70,7 +80,7 @@ const Header = () => {
           </h1>
         </div>
         <div className="absolute z-20 bg-slate-50 right-72 top-20">
-          {serviceDropdown && <Dropdown reference={reference} ></Dropdown>}
+          {serviceDropdown && <Dropdown reference={reference}></Dropdown>}
         </div>
       </div>
     </>

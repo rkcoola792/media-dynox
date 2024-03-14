@@ -18,18 +18,18 @@ const Section2 = () => {
         <h1 className="text-3xl">
           <span className="font-bold ">What</span> We Do
         </h1>
-        <p className="text-sm leading-8">
+        <p className="text-md leading-8">
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
         <Explore text="Explore"></Explore>
       </div>
 
-      <div className="right-details flex flex-col gap-6 w-[300px] ">
+      <div className="right-details flex flex-col gap-6 w-[350px] ">
         <h1 className="text-3xl">
           <span className="font-bold ">How</span> We Do
         </h1>
-        <p className="text-sm leading-8">
+        <p className="text-md leading-8">
           Take your business to the next level, literally, with our digital
           development solutions that give your business the global stage.
         </p>
