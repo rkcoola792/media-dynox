@@ -7,7 +7,7 @@ const Section2 = () => {
     <div className="bg-gray-100 h-[500px]  w-screen flex items-center justify-center lg:gap-12 sm:gap-6 mt-6 md:gap-8 lg:px-24 sm:px-12 ">
 
 <div className="py-4 px-2 circle bg-mainred lg:h-[330px] lg:w-[330px] sm:h-[230px] sm:w-[230px] rounded-[50%] text-white flex justify-center items-center text-center hover:bg-[#222] transition duration-450 ease-out hover:ease-in cursor-pointer">
-        <div className="sm:p-2">
+        <div className="sm:p-2 p- ">
           <h1 className="lg:text-2xl xl:text-3xl sm:text-lg  p-6 px-8 ">
             <span className="font-bold">We are creators.</span> The masterminds
             behind <span className="font-bold">great innovations.</span>
@@ -33,7 +33,7 @@ const Section2 = () => {
         <h1 className="lg:text-3xl sm:text-2xl">
           <span className="font-bold ">How</span> We Do
         </h1>
-        <p className="lg:text-md lg:leading-8 sm:leading-7 lg:w-[350px]">
+        <p className="lg:text-md lg:leading-8 sm:leading-7 xl:w-[350px]">
           Take your business to the next level, literally, with our digital
           development solutions that give your business the global stage.
         </p>
