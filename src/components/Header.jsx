@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import Dropdown from './Homepage/Dropdown';
+import { CleaningServices } from '@mui/icons-material';
 
 const Header = () => {
     const [openCompany,setOpenCompany]=useState(false)
     const [openServices,setOpenServices]=useState(true)
     const [serviceDropdown,setServiceDropdown]=useState(false)
+    const [reference,setReference]=useState("")
 
   return (
     <>
@@ -20,24 +22,43 @@ const Header = () => {
           <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
             Home
           </h1>
-          <div className="company flex items-center">
-            <span className="lg:text-lg cursor-pointer  transition duration-450 ease-out hover:ease-in hover:text-mainred font-semibold">
+          <div
+            className="company flex items-center"
+            id="Company"
+            onMouseEnter={(e) => {
+              console.log("id", e?.target?.id);
+              setReference(e?.target?.id);
+              setServiceDropdown(true);
+              
+            }}
+            onMouseLeave={() => setServiceDropdown(false)}
+          >
+            <span
+              className="lg:text-lg cursor-pointer  transition duration-450 ease-out hover:ease-in hover:text-mainred font-semibold"
+              id="Company"
+            >
               Company
             </span>
             &nbsp;
-            <span className=" cursor-pointer text-mainred font-extrabold mb-1 className='lg:text-lg'">
+            <span className="cursor-pointer text-mainred font-extrabold mb-1 " id="Company">
               .
             </span>
           </div>
-          <div className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer"
-          onMouseEnter={()=>setServiceDropdown(true)}
-          onMouseLeave={()=>setServiceDropdown(false)}
-          
-          
+          <div
+            className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer"
+            id="Service"
+            onMouseEnter={(e) => {
+              console.log("id", e?.target?.id);
+              setReference(e?.target?.id);
+              setServiceDropdown(true);
+            }}
+            onMouseLeave={() => setServiceDropdown(false)}
           >
-            <h1 className=''>Services</h1>
+            <h1 className="" id="Service">
+              Services
+            </h1>
             &nbsp;
-            <span className="text-mainred font-extrabold mb-1 ">
+            <span className="text-mainred font-extrabold mb-1 " id="Service">
               {openServices ? "." : "."}
             </span>
           </div>
@@ -48,9 +69,9 @@ const Header = () => {
             Reach Us
           </h1>
         </div>
-      </div>
-      <div className='absolute z-20 bg-slate-50 right-72 top-20'>
-        {serviceDropdown&&<Dropdown></Dropdown>}
+        <div className="absolute z-20 bg-slate-50 right-72 top-20">
+          {serviceDropdown && <Dropdown reference={reference} ></Dropdown>}
+        </div>
       </div>
     </>
   );
