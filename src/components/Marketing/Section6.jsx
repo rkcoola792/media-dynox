@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section6 = () => {
   return (
-    <div className="section-6 flex justify-between items-center mt-32 px-24 ">
+    <div className="section-6 flex justify-between items-center mt-32 pl-28  ">
       <div className="left-text w-[30%]">
         {" "}
         <h1 className="font-light text-4xl leading-[45px]">
