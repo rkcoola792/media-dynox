@@ -57,7 +57,7 @@ const Section4 = () => {
       </div>
       <div className="flex flex-wrap gap-12 mt-24">
           {steps?.map((ele) => (
-            <div className="w-[45%]" key={ele?.step}>
+            <div className="md:w-[45%]" key={ele?.step}>
               <Step
                 title={ele?.title}
                 subheading={ele?.subheading}

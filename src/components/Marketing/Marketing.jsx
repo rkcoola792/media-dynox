@@ -72,7 +72,7 @@ const Marketing = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <motion.div className="bg-slate-100">
+        <motion.div className="bg-slate-100 p-2 lg:p-0 mt-12 lg:mt-0">
           <Section8></Section8>
         </motion.div>
       </motion.div>
