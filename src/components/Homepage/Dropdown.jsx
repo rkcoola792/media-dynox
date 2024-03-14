@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Item=({title,subheading,img,color})=>{
+export const Item=({title,subheading,img,color})=>{
     return (
       <div className="item flex gap-2">
         <div className="image">

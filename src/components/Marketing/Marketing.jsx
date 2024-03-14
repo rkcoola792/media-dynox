@@ -7,20 +7,26 @@ import Section5 from './Section5'
 import Section6 from './Section6'
 import Section9 from '../Homepage/Section9'
 import Section7 from './Section7'
+import Section10 from './Section9'
+import Section8 from '../Homepage/Section8'
 
 const Marketing = () => {
   return (
     <div>
-    <Section1></Section1>     
-    <Section2></Section2>     
-    <Section3></Section3>     
-    <Section4></Section4>     
-    <Section5></Section5>     
-    <Section6></Section6>
-    <Section9></Section9>
-    <Section7></Section7>     
+      <Section1></Section1>
+      <Section2></Section2>
+      <Section3></Section3>
+      <Section4></Section4>
+      <Section5></Section5>
+      <Section6></Section6>
+      <Section9></Section9>
+      <Section7></Section7>
+      <div className='bg-slate-100'>
+        <Section8></Section8>
+      </div>
+      <Section10></Section10>
     </div>
-  )
+  );
 }
 
 export default Marketing

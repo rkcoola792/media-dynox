@@ -3,14 +3,14 @@ import Explore from './Explore';
 
 const Section8 = () => {
   return (
-    <div className="section-8 flex gap-6 px-24 pr-36 mt-32">
+    <div className="section-8 flex gap-6 px-24 pr-36 mt-24 h-[520px] justify-center items-center">
       <div className="left w-[30%]  flex flex-col gap-44 ">
         <h1 className="text-4xl ">
           <span className="font-semibold">Explore</span> recent Blogs for a view
         </h1>
         <Explore text="More Blogs "></Explore>
       </div>
-      <div className="right flex w-[70%] gap-4 pr-24">
+      <div className="right flex w-[70%] gap-4 pr-24 ">
         <div className="container-1-img  ">
           <div className="img-1 w-[250px] relative overflow-hidden cursor-pointer  ">
             <img

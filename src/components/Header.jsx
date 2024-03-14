@@ -1,4 +1,5 @@
 import React, {  useState } from 'react'
+import { Link } from 'react-router-dom';
 import Dropdown from './Homepage/Dropdown';
 import "./pogressbar.scss"
 const Header = () => {
@@ -27,9 +28,11 @@ const Header = () => {
           </span>
         </div>
         <div className="right-header-elements flex gap-16 items-center">
-          <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
-            Home
-          </h1>
+          <Link to="/">
+            <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
+              Home
+            </h1>
+          </Link>
           <div
             className="company flex items-center"
             id="Company"
