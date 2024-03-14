@@ -3,13 +3,13 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage/Homepage";
-import Cursor from "./components/cursor/Cursor";
 import Marketing from "./components/Marketing/Marketing";
+// import Cursor from "./components/cursor/Cursor";
 function App() {
   const Layout = () => {
     return (
       <>
-     
+        {/* <Cursor></Cursor>   */}
         <Header></Header>
         <Outlet></Outlet>
         <Footer></Footer>
