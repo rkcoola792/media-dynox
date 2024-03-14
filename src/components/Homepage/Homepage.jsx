@@ -29,7 +29,7 @@ const Homepage = () => {
     <div className="Homepage scroll-smooth">
       <Section1></Section1>
       <motion.div
-        initial={{ opacity: 0, y: 75 }}
+        initial={{ opacity: 0, y: 95 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >

@@ -14,7 +14,7 @@ const Section3 = () => {
         the right people, at the right time with innovative strategies that are
         built for your
       </h3>
-      <div className="cards flex gap-8">
+      <div className="cards flex gap-4 flex-wrap ">
         <Cards
           title="Design"
           first="Graphic Designing"

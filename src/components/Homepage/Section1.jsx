@@ -15,15 +15,15 @@ const Section1 = () => {
             </span>{" "}
             Media Dynox.
           </h1>
-          <div className="hero-image absolute -z-10 lg:-right-16 lg:top-1 -top-6 -right-28  bg-red-200 h-[180px] w-[180px] rounded-[50%]">
+          <div className="hero-image absolute -z-10 lg:-right-16 lg:top-1 -top-6 -right-28  bg-red-200 md:h-[180px] md:w-[180px] h-[140px] w-[140px] sm:-top-1 md:-top-8 md:-right-24 hidden sm:block sm:-right-16 rounded-[50%]">
             <img
               src="/Hero-img.png"
-              className="h-[100px] object-cover m-4"
+              className="h-[75px] md:h-[100px] object-cover m-4"
               alt=""
             />
           </div>
         </div>
-        <div className="hero-subheading my-8 font-medium opacity-95">
+        <div className="hero-subheading my-8 font-medium opacity-95 px-24 text-center">
           Lorem ipsum is simply dummy text of printing and typesetting industry.
         </div>
         <Explore text="Explore"></Explore>

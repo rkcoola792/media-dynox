@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Dropdown from './Homepage/Dropdown';
 import { motion,useScroll,useSpring } from 'framer-motion';
 import "./pogressbar.scss"
+import MenuIcon from "@mui/icons-material/Menu";
 const Header = () => {
     const [openServices,setOpenServices]=useState(true)
     const [serviceDropdown,setServiceDropdown]=useState(false)
@@ -33,14 +34,15 @@ const Header = () => {
         style={{ scaleX }}
       ></div>
 
-      <div className="header flex justify-between px-24 py-8 items-center sticky top-0 bg-slate-50 z-10">
-        <div className="left logo font-bold text-xl lg:text-3xl cursor-pointer">
+      <div className="header flex justify-between sm:px-24 px-12 py-8 items-center sticky top-0 bg-slate-50 z-10">
+        <div className="left logo font-bold sm:text-xl lg:text-3xl cursor-pointer">
           Media Dynox
           <span className="text-mainred font-bold text-2xl lg:text-3xl ">
             .
           </span>
         </div>
-        <div className="right-header-elements flex gap-16 items-center">
+        <div className='hamburger lg:hidden'><MenuIcon></MenuIcon></div>
+        <div className="right-header-elements hidden lg:flex gap-16 items-center sm:">
           <Link to="/">
             <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
               Home
