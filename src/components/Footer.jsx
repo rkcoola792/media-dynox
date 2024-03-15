@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <div className="footer mt-32 h-[500px] flex ">
       <div className="left bg-[#131111] w-[70%] ">
-        <div className="top flex gap-[90px] justify-center pt-24">
+        <div className="top flex lg:gap-[90px] sm:gap-12 justify-center pt-24 px-12">
           <div>
-            <h1 className="text-3xl font-semibold text-white mt-20">
+            <h1 className="lg:text-3xl sm:text-2xl  sm:hidden lg:block font-semibold text-white mt-20">
               MediaDynox<span className="font-bold text-mainred">.</span>
             </h1>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bottom px-24">
+        <div className="bottom lg:px-24 sm:pl-24 ">
           <div className="upper flex gap-2 mt-16 items-center">
             <div className=" text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in ">
               Privacy Policy{" "}
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
      
-      <div className="right w-[35%] bg-slate-100 flex flex-col lg:pl-16 md:pl-10 pt-24  ">
+      <div className="right w-[35%] bg-slate-100 flex flex-col lg:pl-16 sm:pl-10 pt-24  ">
         <div className="top flex flex-col gap-2 ">
           <div className="title">
             <h1 className="lg:text-4xl md:text-3xl font-medium">Get In Touch</h1>
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mid">
-          <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[70%] leading-6 lg:leading-7">
+          <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[80%] lg:leading-7">
             Welcome to our digital agency. We specialize in helping business
             most like your succeed online. From website design and development.
           </p>
