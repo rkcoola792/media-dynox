@@ -78,3 +78,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+.cursor{
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 99999;
+}

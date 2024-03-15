@@ -2,10 +2,7 @@ import React from 'react'
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { motion} from "framer-motion"
 const Explore = ({ text, color, size, hoverColor }) => {
-  console.log("hover color", text);
-  console.log("hover color", color);
-  console.log("hover color", size);
-  console.log("hover color", hoverColor);
+  
 
   color = color ? "white" : "black";
   hoverColor = hoverColor ? "white" : "red";

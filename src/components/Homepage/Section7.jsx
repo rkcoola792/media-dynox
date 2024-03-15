@@ -66,8 +66,6 @@ const Section7 = () => {
   }, []);
 
 
-console.log("count",number)
-console.log("user",users[1].name)
   return (
     <div className="section-7 py-24 md:px-24 sm:px-12 flex gap-12 text-center items-center bg-slate-100 h-[700px] mt-16 flex-col">
       <div className="top">

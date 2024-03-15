@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Section1 from './Section1'
 import Section2 from './Section2'
 import Section3 from './Section3'
@@ -8,25 +8,42 @@ import Section6 from './Section6'
 import Section7 from './Section7'
 import Section8 from './Section8'
 import Section9 from './Section9'
+import "./homepage.scss"
 import { motion,  useScroll, useSpring ,useInView,useAnimation,} from "framer-motion";
 const Homepage = () => {
-    const { scrollYProgress } = useScroll();
-    const scaleX = useSpring(scrollYProgress, {
-      stiffness: 100,
-      damping: 30,
-      restDelta: 0.001,
-    });
+  const [cursorXaxis, setCursorXasix] = useState();
+  const [cursorYaxis, setCursorYasix] = useState();
 
-    const ref=useRef(null)
-    const isInView=useInView(ref)
-    const mainControls=useAnimation()
-    useEffect(()=>{
-      if(isInView){
-        mainControls.start("visible")
-      }
-    },[isInView])
+  useEffect(()=>{
+
+    document.addEventListener('mousemove',(e)=>{
+    setCursorXasix(e?.pageX)
+    setCursorYasix(e?.pageY)
+    console.log("cursor movement", cursorXaxis);
+      })
+  },[])
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const mainControls = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
   return (
     <div className="Homepage scroll-smooth">
+      <div
+        className="cursor"
+        style={{ left: cursorXaxis + "px", top: cursorYaxis-100 + "px" }}
+      ></div>
       <Section1></Section1>
       <motion.div
         initial={{ opacity: 0, y: 95 }}
