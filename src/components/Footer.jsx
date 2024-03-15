@@ -89,44 +89,45 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="right w-[35%] bg-slate-100 flex flex-col pl-10 pt-24 ">
+     
+      <div className="right w-[35%] bg-slate-100 flex flex-col lg:pl-16 md:pl-10 pt-24  ">
         <div className="top flex flex-col gap-2 ">
           <div className="title">
-            <h1 className="text-4xl font-medium">Get In Touch</h1>
+            <h1 className="lg:text-4xl md:text-3xl font-medium">Get In Touch</h1>
           </div>
-          <div className="hr border border-b-black mt-1  w-64">
+          <div className="hr border border-b-black mt-1  w-[70%]">
             <hr />
           </div>
-          <div className="ctas flex gap-2">
-            <div className="scale-90">
+          <div className="ctas lg:flex flex-wrap sm:-translate-x-3">
+            <div className="md:scale-90 ">
               <Explore text="Contact Us" size="sm"></Explore>
             </div>
-            <div className='scale-90'>
+            <div className='md:scale-90 '>
               <Explore text="Schedule a meeting" size="sm"></Explore>
             </div>
           </div>
         </div>
         <div className="mid">
-          <p className="text-gray-700 text-sm mt-6 w-80 leading-6">
+          <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[70%] leading-6 lg:leading-7">
             Welcome to our digital agency. We specialize in helping business
             most like your succeed online. From website design and development.
           </p>
         </div>
-        <div className="bottom mt-8">
+        <div className="bottom lg:mt-8 sm:mt-6 ">
           <h1 className="text-2xl font-semibold">
             Follow Us <span className="text-mainred">.</span>
           </h1>
-          <div className="social-icons flex gap-2 mt-1">
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer">
+          <div className="social-icons flex -translate-x-1 mt-2">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-75">
               <XIcon></XIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-90">
               <FacebookIcon></FacebookIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-90">
               <LinkedInIcon></LinkedInIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-90">
               <InstagramIcon></InstagramIcon>
             </div>
           </div>
