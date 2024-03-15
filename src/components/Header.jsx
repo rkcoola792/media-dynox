@@ -52,7 +52,7 @@ const Header = () => {
             className="company flex items-center"
             id="Company"
             onMouseEnter={(e) => {
-              console.log("id", e?.target?.id);
+              // console.log("id", e?.target?.id);
               setReference(e?.target?.id);
               setServiceDropdown(true);
             }}
@@ -76,7 +76,6 @@ const Header = () => {
             className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer"
             id="Service"
             onMouseEnter={(e) => {
-              console.log("id", e?.target?.id);
               setReference(e?.target?.id);
               setServiceDropdown(true);
             }}
@@ -97,7 +96,7 @@ const Header = () => {
             Reach Us
           </h1>
         </div>
-        <div className="absolute z-20 bg-slate-50 right-72 top-20">
+        <div className="absolute z-20 bg-slate-50 right-72 top-[65px]" onMouseEnter={()=>setServiceDropdown(true)} onMouseLeave={()=>setServiceDropdown(false)} >
           {serviceDropdown && <Dropdown reference={reference}></Dropdown>}
         </div>
       </div>

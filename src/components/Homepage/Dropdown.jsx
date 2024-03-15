@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Item=({title,subheading,img,color})=>{
     return (
-      <div className="item flex gap-2">
+      <div className="item flex gap-2 hover:bg-gray-100">
         <div className="image">
           <div className={`w-12 h-12 rounded-[50%] flex ${color} justify-center items-center`}>
             <img src={img} alt="" className="w-8 h-8 " />
@@ -21,7 +21,7 @@ const Dropdown = ({reference}) => {
   console.log("referece recicev", reference)
   
   return (
-    <div className="dropdown w-[380px] p-8 shadow-lg flex flex-col gap-8 rounded-sm transition duration-450 ease-out hover:ease-in">
+    <div className="dropdown w-[380px] p-8 shadow-lg flex flex-col gap-8 rounded-sm transition duration-450 ease-out hover:ease-in ">
       <Item
         subheading={reference=="Service"?"Learn how to sign up, install and use our products.":"We are the face to be reckoned with"}
         title={reference=="Service" ?"Marketing":"About Us"}
