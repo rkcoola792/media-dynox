@@ -1,13 +1,22 @@
 .cursor{
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
+  width: 40px;
+  height: 40px;
+  background-color:transparent;
   position: absolute;
   border-radius: 50%;
-  z-index: 99999;
+//   z-index: ;
+  border: 1px solid #ff002e;
+  // mix-blend-mode: ;
+  .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+  }
   
 }
 
-.Homepage{
-    position: relative;
-}
+// .Homepage{
+//     position: relative;
+// }

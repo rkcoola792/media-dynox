@@ -41,9 +41,10 @@ const Homepage = () => {
   return (
     <div className="Homepage scroll-smooth">
       <div
-        className="cursor"
-        style={{ left: cursorXaxis + "px", top: cursorYaxis-100 + "px" }}
-      ></div>
+        className="cursor flex justify-center items-center" 
+        style={{ 
+          left: cursorXaxis+10 + "px", top: cursorYaxis+10 + "px" }}
+      ><div className='dot'></div></div>
       <Section1></Section1>
       <motion.div
         initial={{ opacity: 0, y: 95 }}
