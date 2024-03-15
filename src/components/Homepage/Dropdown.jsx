@@ -1,17 +1,18 @@
 import React from 'react'
 
-
+import { Link } from 'react-router-dom';
 export const Item=({title,subheading,img,color})=>{
     return (
-      <div className="item flex gap-2 hover:bg-gray-100">
+      <div className="item flex gap-2 hover:bg-gray-100 cursor-pointer">
         <div className="image">
           <div className={`w-12 h-12 rounded-[50%] flex ${color} justify-center items-center`}>
             <img src={img} alt="" className="w-8 h-8 " />
           </div>
         </div>
         <div className="texts">
-          <div className="heading font-semibold">{title}</div>
+          <Link to="/marketing"><div className="heading font-semibold">{title}</div>
           <div className="subheading text-sm">{subheading}</div>
+        </Link>
         </div>
       </div>
     );
