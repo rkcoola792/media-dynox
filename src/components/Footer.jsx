@@ -88,7 +88,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="upper sm:flex-row flex flex-col gap-2 mt-16 sm:items-center">
+          <div className="upper sm:flex-row flex flex-col gap-2 mt-20 sm:items-center">
             <div className=" sm:text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in text-lg">
               Privacy Policy{" "}
             </div>

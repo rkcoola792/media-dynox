@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Step from '../Homepage/Step';
 import React from 'react'
 
@@ -44,28 +45,43 @@ const Section4 = () => {
   return (
     <div className="section-4 sm:px-24 sm:mt-20 px-8 py-12">
       <div className="heading  flex flex-col gap-12">
-        <h1 className="font-light sm:text-4xl text-3xl">
+        <motion.h1
+          className="font-light sm:text-4xl text-3xl"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <span className="font-semibold">How Marketing</span> Works Step by
           Step flow
-        </h1>
-        <p className="leading-7">
+        </motion.h1>
+        <motion.p
+          className="leading-7"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
-        </p>
+        </motion.p>
       </div>
       <div className="flex flex-wrap sm:gap-12 gap-6 sm:mt-24 mt-12">
-          {steps?.map((ele) => (
-            <div className="md:w-[45%]" key={ele?.step}>
-              <Step
-                title={ele?.title}
-                subheading={ele?.subheading}
-                step={ele?.step}
-              ></Step>
-            </div>
-          ))}
-          
+        {steps?.map((ele) => (
+          <motion.div
+            className="md:w-[45%]"
+            key={ele?.step}
+            initial={{ opacity: 0, y: 75 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <Step
+              title={ele?.title}
+              subheading={ele?.subheading}
+              step={ele?.step}
+            ></Step>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
