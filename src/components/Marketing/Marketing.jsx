@@ -10,6 +10,7 @@ import Section7 from './Section7'
 import Section10 from './Section9'
 import Section8 from '../Homepage/Section8'
 import {motion} from "framer-motion"
+import MoveTop from '../Homepage/MoveTop'
 
 const Marketing = () => {
   return (
@@ -67,6 +68,7 @@ const Marketing = () => {
       >
         <Section7></Section7>
       </motion.div>
+      <MoveTop></MoveTop>
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
