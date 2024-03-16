@@ -41,7 +41,7 @@ const Homepage = () => {
   return (
     <div className="Homepage scroll-smooth">
       <div
-        className="cursor flex justify-center items-center" 
+        className=" hidden cursor sm:flex justify-center items-center" 
         style={{ 
           left: cursorXaxis+10 + "px", top: cursorYaxis+10 + "px" }}
       ><div className='dot'></div></div>

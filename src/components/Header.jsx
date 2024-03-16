@@ -30,7 +30,7 @@ const Header = () => {
     <>
       <div
       id="progress-bar"
-        className="progress-bar"
+        className="progress-bar "
         style={{ scaleX }}
       ></div>
 
