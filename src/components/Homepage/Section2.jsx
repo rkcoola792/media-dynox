@@ -22,7 +22,7 @@ const Section2 = () => {
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
-        <div className="scale-125 px-3 sm:scale-100 sm:px-0">
+        <div className="scale-110  sm:scale-100 sm:px-0">
           <Explore text="Explore"></Explore>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Section2 = () => {
           Take your business to the next level, literally, with our digital
           development solutions that give your business the global stage.
         </p>
-        <div className="scale-125 px-3 sm:scale-100 sm:px-0">
+        <div className="scale-110 px- sm:scale-100 sm:px-0">
           <Explore text="Explore"></Explore>
         </div>
       </div>

@@ -30,13 +30,13 @@ const Section4 = () => {
     },
   ];
   return (
-    <div className="section-4 md:flex px-24 bg-slate-100  gap-16 py-24 mt-12 items-center">
+    <div className="section-4 md:flex sm:px-24 px-8 bg-slate-100  gap-16 py-24 mt-12 items-center">
       <div className="left md:w-[30%] text-center md:text-left flex flex-col gap-8 ">
-        <h1 className="xl:text-3xl sm:text-2xl lg:text-3xl leading-10 ">
+        <h1 className="xl:text-3xl sm:text-2xl lg:text-3xl leading-10 text-3xl ">
           <span className="font-semibold">Execute</span> all your{" "}
           <span className="font-semibold">Business goals</span> in one place
         </h1>
-        <p className="text-gray-700 sm:text-sm xl:text-lg">
+        <p className="text-gray-700 sm:text-sm xl:text-lg leading-7">
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
@@ -50,7 +50,10 @@ const Section4 = () => {
               {ele?.title}
             </AccordionTrigger>
             <AccordionContent>
+            <p className="leading-7">
+
               {ele?.subheading}
+            </p>
             </AccordionContent>
           </AccordionItem>
 )}
