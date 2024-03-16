@@ -19,7 +19,7 @@ const Homepage = () => {
     document.addEventListener('mousemove',(e)=>{
     setCursorXasix(e?.pageX)
     setCursorYasix(e?.pageY)
-    console.log("cursor movement", cursorXaxis);
+    
       })
   },[])
 

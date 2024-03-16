@@ -27,8 +27,8 @@ function InfiniteScroll() {
       <Wrapper>
         <Marquee>
           <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
+            {row1.map((el,index) => (
+              <ImageGroup key={index}>
               <h1 className="">
                 {el}
 
@@ -38,8 +38,8 @@ function InfiniteScroll() {
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
+            {row1.map((el,index ) => (
+              <ImageGroup key={index}>
                 {el} 
               </ImageGroup>
             ))}
@@ -47,15 +47,15 @@ function InfiniteScroll() {
         </Marquee>
         <Marquee>
           <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
+            {row2.map((el,index) => (
+              <ImageGroup key={index}>
                 {el} 
               </ImageGroup>
             ))}
           </MarqueeGroup2>
           <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
+            {row2.map((el,index) => (
+              <ImageGroup key={index}>
                 {el} 
               </ImageGroup>
             ))}
