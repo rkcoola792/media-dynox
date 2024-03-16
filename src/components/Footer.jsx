@@ -39,19 +39,19 @@ const Footer = () => {
           </div>
           <div className="contact flex flex-col w-[250px]">
             <h1 className="text-white sm:text-xl mb-6 text-3xl">Contact</h1>
-            <div className="contact-elements flex flex-col gap-2">
+            <div className="contact-elements flex flex-col sm: gap-2">
               <div className="address flex gap-2 ">
-                <div className="text-mainred opacity-70">
+                <div className="text-mainred opacity-70 hidden sm:block">
                   <LocationOnIcon></LocationOnIcon>
                 </div>
-                <p className=" text-white opacity-60 hover:opacity-100 transition duration-450 ease-out hover:ease-in ">
+                <p className=" text-white opacity-60 hover:opacity-100 transition duration-450 ease-out hover:ease-in text-lg sm:text-base">
                   267, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana
                   122015
                 </p>
               </div>
 
               <div className="phone flex gap-2">
-                <div className="text-mainred opacity-70 ">
+                <div className="text-mainred opacity-70 hidden sm:block ">
                   <LocalPhoneIcon></LocalPhoneIcon>
                 </div>
                 <p className=" text-white opacity-60 hover:opacity-100 transition duration-450 ease-out hover:ease-in sm:text-base">
@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
 
               <div className="email flex gap-2">
-                <div className="text-mainred opacity-70">
+                <div className="text-mainred opacity-70 hidden sm:block">
                   <EmailIcon></EmailIcon>
                 </div>
                 <p className=" text-white opacity-60 hover:opacity-100 transition duration-450 ease-out hover:ease-in ">
@@ -72,31 +72,31 @@ const Footer = () => {
         </div>
         <div className="bottom lg:px-24 sm:pl-24 px-8 ">
           <div className="upper sm:flex-row flex flex-col gap-2 mt-16 sm:items-center">
-            <div className=" text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in ">
+            <div className=" sm:text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in text-lg">
               Privacy Policy{" "}
             </div>
             <div className="text-sm text-white opacity-60 hidden sm:block ">
               |
             </div>
-            <div className="text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in ">
+            <div className="sm:text-sm text-lg text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in ">
               Terms and conditions{" "}
             </div>
             <div className="text-sm text-white opacity-60 hidden sm:block">
               |
             </div>
-            <div className=" text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in ">
+            <div className=" sm:text-sm text-lg text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in ">
               Privacy Shield Policy
             </div>
           </div>
           <div className="lower sm:mt-4 mt-8">
-            <p className="text-sm text-white opacity-60 ">
+            <p className="sm:text-sm text-lg text-white opacity-60 ">
               Copyright@2024 Mediadynox.com. All Rights Reserved.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="right sm:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12">
+      <div className="right sm:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12 gap-3">
         <div className="top flex flex-col gap-2 ">
           <div className="title">
             <h1 className="lg:text-4xl md:text-3xl font-medium text-3xl">
@@ -107,10 +107,10 @@ const Footer = () => {
             <hr />
           </div>
           <div className="ctas lg:flex flex-wrap sm:-translate-x-3">
-            <div className="md:scale-90 ">
+            <div className="md:scale-90 scale-125 px-8 sm:px-0">
               <Explore text="Contact Us" size="sm"></Explore>
             </div>
-            <div className="md:scale-90 ">
+            <div className="md:scale-90 scale-125 px-8 sm:px-0 ">
               <Explore text="Schedule a meeting" size="sm"></Explore>
             </div>
           </div>
@@ -125,17 +125,17 @@ const Footer = () => {
           <h1 className="sm:text-2xl font-semibold text-3xl">
             Follow Us <span className="text-mainred">.</span>
           </h1>
-          <div className="social-icons flex gap-2 -translate-x-1 mt-2">
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-75 scale-110">
+          <div className="social-icons flex sm:gap-2 -translate-x-1 mt-4 ml-1  gap-5">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-75 scale-150">
               <XIcon></XIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-110">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-150">
               <FacebookIcon></FacebookIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-110">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-150">
               <LinkedInIcon></LinkedInIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-110">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-150">
               <InstagramIcon></InstagramIcon>
             </div>
           </div>
