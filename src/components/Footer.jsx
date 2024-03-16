@@ -7,12 +7,24 @@ import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { motion } from 'framer-motion';
+
 
 const Footer = () => {
   return (
-    <div className="footer mt-32 sm:h-[500px] sm:flex">
+    <motion.div
+      className="footer mt-32 sm:h-[500px] sm:flex"
+      initial={{ opacity: 0, y: 75 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+    >
       <div className="left bg-[#131111] sm:w-[70%] pb-24">
-        <div className="top sm:flex lg:gap-[90px] sm:gap-12 justify-center sm:pt-24 px-8 py-1">
+        <motion.div
+          className="top sm:flex lg:gap-[90px] sm:gap-12 justify-center sm:pt-24 px-8 py-1"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <div>
             <h1 className="lg:text-3xl sm:text-2xl sm:hidden lg:block font-semibold text-white mt-20 text-4xl">
               MediaDynox<span className="font-bold text-mainred">.</span>
@@ -69,8 +81,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="bottom lg:px-24 sm:pl-24 px-8 ">
+        </motion.div>
+        <motion.div
+          className="bottom lg:px-24 sm:pl-24 px-8 "
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <div className="upper sm:flex-row flex flex-col gap-2 mt-16 sm:items-center">
             <div className=" sm:text-sm text-white opacity-60 hover:opacity-90 cursor-pointer transition duration-450 ease-out hover:ease-in text-lg">
               Privacy Policy{" "}
@@ -93,11 +110,16 @@ const Footer = () => {
               Copyright@2024 Mediadynox.com. All Rights Reserved.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="right sm:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12 gap-3">
-        <div className="top flex flex-col gap-2 ">
+        <motion.div
+          className="top flex flex-col gap-2 "
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <div className="title">
             <h1 className="lg:text-4xl md:text-3xl font-medium text-3xl">
               Get In Touch
@@ -114,14 +136,24 @@ const Footer = () => {
               <Explore text="Schedule a meeting" size="sm"></Explore>
             </div>
           </div>
-        </div>
-        <div className="mid">
+        </motion.div>
+        <motion.div
+          className="mid"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[80%] lg:leading-7 leading-7">
             Welcome to our digital agency. We specialize in helping business
             most like your succeed online. From website design and development.
           </p>
-        </div>
-        <div className="bottom lg:mt-8 sm:mt-6 mt-6 ">
+        </motion.div>
+        <motion.div
+          className="bottom lg:mt-8 sm:mt-6 mt-6 "
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <h1 className="sm:text-2xl font-semibold text-3xl">
             Follow Us <span className="text-mainred">.</span>
           </h1>
@@ -139,9 +171,9 @@ const Footer = () => {
               <InstagramIcon></InstagramIcon>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

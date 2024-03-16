@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./section7.scss";
 import Testimonial from "./Testimonial";
+import { motion } from "framer-motion";
 const Section7 = () => {
 
     const users = [
@@ -68,16 +69,26 @@ const Section7 = () => {
 
   return (
     <div className="section-7 py-24 md:px-24 sm:px-12 flex gap-12 text-center items-center bg-slate-100 sm:h-[700px] mt-16 flex-col ">
-      <div className="top">
+      <motion.div
+        className="top"
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
         <h1 className="sm:text-4xl text-3xl mb-2 font-normal">
           <span className="font-semibold ">Customer</span> Voice :{" "}
         </h1>
         <h1 className="sm:text-4xl text-3xl">
           <span className="font-semibold">Hear</span> what we say{" "}
         </h1>
-      </div>
+      </motion.div>
 
-      <div className="mid-image-container flex md:gap-6 sm:gap-0 items-center flex-wrap gap-4 px-8 ">
+      <motion.div
+        className="mid-image-container flex md:gap-6 sm:gap-0 items-center flex-wrap gap-4 px-8 "
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
         <div
           id="1"
           className="avatar object-cover rounded-[50%] sm:h-12 sm:w-12 flex justify-center items-center active cursor-pointer"
@@ -127,14 +138,19 @@ const Section7 = () => {
         >
           <img src="/av8.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
-      </div>
-      <div className="bottomContainer">
+      </motion.div>
+      <motion.div
+        className="bottomContainer"
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
         <Testimonial
           name={users[number]?.name}
           country={users[number]?.country}
           description={users[number]?.description}
         ></Testimonial>
-      </div>
+      </motion.div>
     </div>
   );
 };
