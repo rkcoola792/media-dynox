@@ -1,9 +1,16 @@
 import React from 'react'
 import "./section1.scss"
 import Explore from './Explore';
+import { motion } from 'framer-motion';
+
 const Section1 = () => {
   return (
-    <div className='mb-44'> 
+    <motion.div
+      className="mb-44"
+      initial={{ opacity: 0, y: 75 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       <div className="hero-banner flex flex-col items-center pt-20 sm:h-[470px]  ">
         <div className="hero-heading flex flex-col items-center relative text-center">
           <h1 className=" lg:text-7xl sm:text-5xl  text-4xl font-bold text-mainred my-4 ">
@@ -26,9 +33,9 @@ const Section1 = () => {
         <div className="hero-subheading my-8 font-medium opacity-95 sm:px-24 px-12 text-center  ">
           Lorem ipsum is simply dummy text of printing and typesetting industry.
         </div>
-        <Explore text="Explore" ></Explore>
+        <Explore text="Explore"></Explore>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
