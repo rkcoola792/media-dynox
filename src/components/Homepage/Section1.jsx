@@ -3,8 +3,8 @@ import "./section1.scss"
 import Explore from './Explore';
 const Section1 = () => {
   return (
-    <div className=''> 
-      <div className="hero-banner flex flex-col items-center pt-20 sm:h-[470px] h-screen ">
+    <div className='mb-44'> 
+      <div className="hero-banner flex flex-col items-center pt-20 sm:h-[470px]  ">
         <div className="hero-heading flex flex-col items-center relative text-center">
           <h1 className=" lg:text-7xl sm:text-5xl  text-4xl font-bold text-mainred my-4 ">
             Marketing

@@ -34,7 +34,7 @@ const Header = () => {
         style={{ scaleX }}
       ></div>
 
-      <div className="header flex justify-between sm:px-24 px-12 py-8 items-center sticky top-0 bg-slate-50 z-10">
+      <div className="header flex justify-between sm:px-24 px-8 py-8 items-center sticky top-0 bg-slate-50 z-10">
         <div className="left logo font-bold sm:text-xl lg:text-3xl cursor-pointer">
           Media Dynox
           <span className="text-mainred font-bold text-2xl lg:text-3xl ">
