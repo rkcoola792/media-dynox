@@ -96,10 +96,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="right sm:w-[35%] bg-slate-100 flex flex-col lg:pl-16 sm:pl-10 pt-24  ">
+      <div className="right sm:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12">
         <div className="top flex flex-col gap-2 ">
           <div className="title">
-            <h1 className="lg:text-4xl md:text-3xl font-medium">
+            <h1 className="lg:text-4xl md:text-3xl font-medium text-3xl">
               Get In Touch
             </h1>
           </div>
@@ -116,26 +116,26 @@ const Footer = () => {
           </div>
         </div>
         <div className="mid">
-          <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[80%] lg:leading-7">
+          <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[80%] lg:leading-7 leading-7">
             Welcome to our digital agency. We specialize in helping business
             most like your succeed online. From website design and development.
           </p>
         </div>
-        <div className="bottom lg:mt-8 sm:mt-6 ">
-          <h1 className="text-2xl font-semibold">
+        <div className="bottom lg:mt-8 sm:mt-6 mt-6 ">
+          <h1 className="sm:text-2xl font-semibold text-3xl">
             Follow Us <span className="text-mainred">.</span>
           </h1>
-          <div className="social-icons flex -translate-x-1 mt-2">
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-75">
+          <div className="social-icons flex gap-2 -translate-x-1 mt-2">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-75 scale-110">
               <XIcon></XIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-90">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-110">
               <FacebookIcon></FacebookIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-90">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-110">
               <LinkedInIcon></LinkedInIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer scale-90">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-110">
               <InstagramIcon></InstagramIcon>
             </div>
           </div>
