@@ -42,6 +42,7 @@ const Section2 = () => {
           <Explore text="Explore"></Explore>
         </div>
       </div>
+      
     </div>
   );
 }

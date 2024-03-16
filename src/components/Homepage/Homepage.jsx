@@ -10,6 +10,7 @@ import Section8 from './Section8'
 import Section9 from './Section9'
 import "./homepage.scss"
 import { motion,  useScroll, useSpring ,useInView,useAnimation,} from "framer-motion";
+import MoveTop from './MoveTop'
 const Homepage = () => {
   const [cursorXaxis, setCursorXasix] = useState();
   const [cursorYaxis, setCursorYasix] = useState();
@@ -41,10 +42,14 @@ const Homepage = () => {
   return (
     <div className="Homepage scroll-smooth">
       <div
-        className=" hidden cursor sm:flex justify-center items-center" 
-        style={{ 
-          left: cursorXaxis+10 + "px", top: cursorYaxis+10 + "px" }}
-      ><div className='dot'></div></div>
+        className=" hidden cursor sm:flex justify-center items-center"
+        style={{
+          left: cursorXaxis + 10 + "px",
+          top: cursorYaxis + 10 + "px",
+        }}
+      >
+        <div className="dot"></div>
+      </div>
       <Section1></Section1>
       <motion.div
         initial={{ opacity: 0, y: 95 }}
@@ -53,7 +58,9 @@ const Homepage = () => {
       >
         <Section2></Section2>
       </motion.div>
-
+      <div className="relative">
+        <MoveTop></MoveTop>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
