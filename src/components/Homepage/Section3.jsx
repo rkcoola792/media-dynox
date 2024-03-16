@@ -81,7 +81,13 @@ const Section3 = () => {
           ></Cards>
         </motion.div>
       </div>
-      <Explore text="Explore all Services"></Explore>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <Explore text="Explore all Services"></Explore>
+      </motion.div>
     </div>
   );
 }
