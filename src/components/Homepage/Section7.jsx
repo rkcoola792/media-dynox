@@ -67,20 +67,20 @@ const Section7 = () => {
 
 
   return (
-    <div className="section-7 py-24 md:px-24 sm:px-12 flex gap-12 text-center items-center bg-slate-100 h-[700px] mt-16 flex-col">
+    <div className="section-7 py-24 md:px-24 sm:px-12 flex gap-12 text-center items-center bg-slate-100 sm:h-[700px] mt-16 flex-col ">
       <div className="top">
-        <h1 className="text-4xl mb-2 font-normal">
+        <h1 className="sm:text-4xl text-3xl mb-2 font-normal">
           <span className="font-semibold ">Customer</span> Voice :{" "}
         </h1>
-        <h1 className="text-4xl">
+        <h1 className="sm:text-4xl text-3xl">
           <span className="font-semibold">Hear</span> what we say{" "}
         </h1>
       </div>
 
-      <div className="mid-image-container flex md:gap-6 sm:gap-0 items-center ">
+      <div className="mid-image-container flex md:gap-6 sm:gap-0 items-center flex-wrap gap-4 px-8 ">
         <div
           id="1"
-          className="avatar object-cover rounded-[50%] sm:h-12 sm:w-12 flex justify-center items-center active cursor-pointer "
+          className="avatar object-cover rounded-[50%] sm:h-12 sm:w-12 flex justify-center items-center active cursor-pointer"
           onClick={() => setNumber("1")}
         >
           <img src="/av2.png" className=" h-16 w-16 rounded-[50%] " alt="" />
@@ -88,7 +88,7 @@ const Section7 = () => {
         <div
           id="2"
           onClick={() => setNumber(2)}
-          className="avatar object-cover rounded-[50%] flex justify-center items-center mt-8 cursor-pointer"
+          className="avatar object-cover rounded-[50%] flex justify-center items-center sm:mt-8 cursor-pointer"
         >
           <img src="/av3.webp" className="h-16 w-16 rounded-[50%] " alt="" />
         </div>
@@ -102,7 +102,7 @@ const Section7 = () => {
         <div
           id="4"
           onClick={() => setNumber("4")}
-          className="avatar object-cover cursor-pointer rounded-[50%] mt-8 flex justify-center items-center"
+          className="avatar object-cover cursor-pointer rounded-[50%] sm:mt-8 flex justify-center items-center"
         >
           <img src="/av9.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>
@@ -116,7 +116,7 @@ const Section7 = () => {
         <div
           id="6"
           onClick={() => setNumber("6")}
-          className=" avatar object-cover rounded-[50%] mt-8 flex cursor-pointer justify-center items-center"
+          className=" avatar object-cover rounded-[50%] sm:mt-8 flex cursor-pointer justify-center items-center"
         >
           <img src="/av7.png" className="h-16 w-16 rounded-[50%]" alt="" />
         </div>

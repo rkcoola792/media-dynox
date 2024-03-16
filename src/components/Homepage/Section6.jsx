@@ -11,19 +11,19 @@ const Section6 = () => {
 
   return (
     <div className="section-6 mt-24 md:flex ">
-      <div className="left md:w-[50%] px-24 pr-32  flex flex-col gap-12">
-        <h1 className="text-4xl leading-10  ">
+      <div className="left md:w-[50%] sm:px-24 px-8 sm:pr-32  flex flex-col gap-12">
+        <h1 className="sm:text-4xl leading-10 text-3xl text-center sm:text-left  ">
           <span className="font-semibold md:text-left sm:text-center">Our Process.</span> Simple Seamless
           and Streamlined.
         </h1>
-        <p className="text-gray-700 sm:text-justify">
+        <p className="text-gray-700 sm:text-justify leading-7">
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
           Announce your brand to the right people, at the right time with
           innovative strategies that are built for your business and you.
         </p>
       </div>
-      <div className="right md:w-1/2 sm:mt-12 md:mt-0 flex flex-col gap-6 pr-24  ml-24 relative">
+      <div className="right md:w-1/2 sm:mt-12 md:mt-0 flex flex-col gap-6 sm:pr-24 pr-12 ml-1  sm:ml-24 relative mt-8 ">
         <Step title={stepTitles[0]} subheading={subheading} step="01"></Step>
         <Step title={stepTitles[1]} subheading={subheading} step="02"></Step>
         <Step title={stepTitles[2]} subheading={subheading} step="03"></Step>
