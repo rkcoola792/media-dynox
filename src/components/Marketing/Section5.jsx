@@ -6,6 +6,7 @@ import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import HailIcon from "@mui/icons-material/Hail";
 import SectionFiveElement from './SectionFiveElement';
+import { motion } from 'framer-motion';
 
 const Section5 = () => {
     const services = [
@@ -59,33 +60,51 @@ const Section5 = () => {
   return (
     <div className="section-5 bg-slate-100 sm:px-24 mt-20 sm:py-24 py-12 px-8">
       <div className="heading  flex flex-col gap-12">
-        <h1 className="font-light sm:text-4xl text-3xl">
+        <motion.h1
+          className="font-light sm:text-4xl text-3xl"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <span className="font-semibold">Why does your business need</span>{" "}
           marketing services ?
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="description ">
         <div className="description mt-16 flex flex-col gap-10 leading-7">
-          <p>
+          <motion.p
+            initial={{ opacity: 0, y: 75 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 75 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into
-          </p>
+          </motion.p>
         </div>
       </div>
-      <div className='services flex flex-wrap justify-between mt-8'>
-        {services.map((ele) => (
-          <SectionFiveElement title={ele.title} subheading={ele.subheading} icon={ele.icon}></SectionFiveElement>
+      <div className="services flex flex-wrap justify-between mt-8">
+        {services.map((ele,index) => (
+          <SectionFiveElement
+          key={index}
+            title={ele.title}
+            subheading={ele.subheading}
+            icon={ele.icon}
+          ></SectionFiveElement>
         ))}
       </div>
     </div>

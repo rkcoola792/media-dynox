@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from 'framer-motion';
 
 
 const Section7 = () => {
@@ -43,26 +44,32 @@ const Section7 = () => {
   return (
     <div className="faqs sm:mt-24 mt-20 sm:px-32 px-8 flex flex-col justify-center items-center ">
       <div className="heading">
-        <h1 className="font-light sm:text-4xl text-3xl  leading-[45px]">
+        <motion.h1
+          className="font-light sm:text-4xl text-3xl  leading-[45px]"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <span className="font-semibold">Frequent </span>Asked Questions
-        </h1>
+        </motion.h1>
       </div>
-      <div className="acordian sm:w-[70%]  w-full ">
+      <motion.div
+        className="acordian sm:w-[70%]  w-full "
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
         <Accordion type="single" collapsible className="w-full sm:mt-20 mt-6 ">
-          {FAQ.map((ele,index) => (
-            <AccordionItem value={`item-${index+1}`} key={index}>
-              <AccordionTrigger >
-                {ele?.question}
-              </AccordionTrigger>
+          {FAQ.map((ele, index) => (
+            <AccordionItem value={`item-${index + 1}`} key={index}>
+              <AccordionTrigger>{ele?.question}</AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-gray-600 leading-6">
-                  {ele?.answer}
-                </p>
+                <p className="text-sm text-gray-600 leading-6">{ele?.answer}</p>
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
+      </motion.div>
     </div>
   );
 }

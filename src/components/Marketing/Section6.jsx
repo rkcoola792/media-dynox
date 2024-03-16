@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 
 const Section6 = () => {
@@ -5,12 +6,22 @@ const Section6 = () => {
     <div className="section-6 sm:flex sm:justify-between pt-16 -mb-8 sm:mb-0 sm:items-center sm:my-24 sm:pl-28 px-8  ">
       <div className="left-text md:w-[30%] sm:w-[50%]">
         {" "}
-        <h1 className="font-light lg:text-4xl sm:text-3xl  text-3xl leading-[45px]">
+        <motion.h1
+          className="font-light lg:text-4xl sm:text-3xl  text-3xl leading-[45px]"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <span className="font-semibold">Popular tool that power</span> our
           digital marketing services
-        </h1>
+        </motion.h1>
       </div>
-      <div className=" right-images mt-12 sm:mt-0 flex flex-wrap justify-start items-start gap-6 lg:w-[40%] sm:w-[50%]">
+      <motion.div
+        className=" right-images mt-12 sm:mt-0 flex flex-wrap justify-start items-start gap-6 lg:w-[40%] sm:w-[50%]"
+        initial={{ opacity: 0, y: 75 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
         <div>
           <img
             src="/GA.webp"
@@ -46,7 +57,7 @@ const Section6 = () => {
             alt=""
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
