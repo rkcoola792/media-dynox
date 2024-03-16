@@ -6,8 +6,8 @@ function InfiniteScroll() {
     "Technology",
     "App Development",
     "Web development ",
-    "Software development ",
-    "IOS development ",
+    "Software development",
+    "IOS development",
     "Businnes",
   ];
 
@@ -29,7 +29,11 @@ function InfiniteScroll() {
           <MarqueeGroup>
             {row1.map((el) => (
               <ImageGroup>
+              <h1 className="">
                 {el}
+
+              </h1>
+
               </ImageGroup>
             ))}
           </MarqueeGroup>
@@ -131,9 +135,16 @@ const ImageGroup = styled.div`
   place-items: center;
   width: clamp(10rem, 1rem + 40vmin, 30rem);
   padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
-  color:white;
-  opacity:80%;
-  font-size:20px;
-  font-weight:500
+  color: white;
+  opacity: 70%;
+
+  font-size: 20px;
+  font-weight: 500;
+  &:hover {
+    opacity: 100%;
+    
+  }
+  transition: opacity  0.2s ease-in-out;
+  
 `;
 
