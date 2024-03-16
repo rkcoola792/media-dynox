@@ -57,9 +57,9 @@ const Section5 = () => {
       },
     ];
   return (
-    <div className="section-5 bg-slate-100 px-24 mt-32 py-24">
+    <div className="section-5 bg-slate-100 sm:px-24 mt-20 sm:py-24 py-12 px-8">
       <div className="heading  flex flex-col gap-12">
-        <h1 className="font-light text-4xl">
+        <h1 className="font-light sm:text-4xl text-3xl">
           <span className="font-semibold">Why does your business need</span>{" "}
           marketing services ?
         </h1>

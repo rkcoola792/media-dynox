@@ -42,9 +42,9 @@ const Section4 = () => {
      
     ];
   return (
-    <div className="section-4 px-24 mt-32">
+    <div className="section-4 sm:px-24 sm:mt-20 px-8 py-12">
       <div className="heading  flex flex-col gap-12">
-        <h1 className="font-light text-4xl">
+        <h1 className="font-light sm:text-4xl text-3xl">
           <span className="font-semibold">How Marketing</span> Works Step by
           Step flow
         </h1>
@@ -55,7 +55,7 @@ const Section4 = () => {
           innovative strategies that are built for your business and you.
         </p>
       </div>
-      <div className="flex flex-wrap gap-12 mt-24">
+      <div className="flex flex-wrap sm:gap-12 gap-6 sm:mt-24 mt-12">
           {steps?.map((ele) => (
             <div className="md:w-[45%]" key={ele?.step}>
               <Step

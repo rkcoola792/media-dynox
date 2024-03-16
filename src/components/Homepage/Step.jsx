@@ -3,9 +3,9 @@ import Explore from './Explore';
 
 const Step = ({step,title,subheading}) => {
   return (
-    <div className="step flex gap-4 relative ">
+    <div className="step sm:flex-row flex flex-col gap-4 justify-start items-start relative ">
 
-      <div className="sm:hidden md:flex left bg-red-200  hover:bg-mainred hover:text-white cursor-pointer h-12 w-12 mx-4  p-6 rounded-[50%] transition duration-450 ease-out hover:ease-in  items-center justify-center mt-1 flex">
+      <div className="sm:hidden md:flex left bg-red-200  hover:bg-mainred hover:text-white cursor-pointer h-12 w-12 mx-4  p-6 rounded-[50%] transition duration-450 ease-out hover:ease-in  items-center justify-center mt-1 hidden">
     
       <p className='font-semibold'>
         {step}
