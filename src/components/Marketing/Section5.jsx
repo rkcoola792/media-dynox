@@ -83,7 +83,7 @@ const Section5 = () => {
           </p>
         </div>
       </div>
-      <div className='services flex flex-wrap justify-between'>
+      <div className='services flex flex-wrap justify-between mt-8'>
         {services.map((ele) => (
           <SectionFiveElement title={ele.title} subheading={ele.subheading} icon={ele.icon}></SectionFiveElement>
         ))}

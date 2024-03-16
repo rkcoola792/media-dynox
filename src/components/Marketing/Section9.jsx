@@ -4,13 +4,13 @@ import { Item } from "../Homepage/Dropdown"
 
 const Section10 = () => {
   return (
-    <div className="section-10 px-24 mt-12 flex flex-col   ">
+    <div className="section-10 sm:px-24 px-8 mt-12 flex flex-col  ">
       <div className="heading">
-        <h1 className="font-light text-4xl leading-[45px]">
+        <h1 className="font-light sm:text-4xl text-3xl leading-[45px]">
           <span className="font-semibold">Other </span>Services
         </h1>
       </div>
-      <div className="flex items-center  lg:gap-12 sm:gap-6 mt-16 justify-between flex-wrap">
+      <div className="flex items-center  lg:gap-12 sm:gap-6 sm:mt-16 mt-12  gap-8 justify-between flex-wrap">
         <div className="lg:w-[30%] sm:mb-6 lg:mb-0 ">
           <Item
             subheading="Learn how to sign up, install and use our products."

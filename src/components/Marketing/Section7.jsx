@@ -41,14 +41,14 @@ const Section7 = () => {
       },
     ];
   return (
-    <div className="faqs mt-32 px-32 flex flex-col justify-center items-center">
+    <div className="faqs sm:mt-24 mt-20 sm:px-32 px-8 flex flex-col justify-center items-center ">
       <div className="heading">
-        <h1 className="font-light text-4xl leading-[45px]">
+        <h1 className="font-light sm:text-4xl text-3xl  leading-[45px]">
           <span className="font-semibold">Frequent </span>Asked Questions
         </h1>
       </div>
-      <div className="acordian w-[70%] ">
-        <Accordion type="single" collapsible className="w-full mt-20">
+      <div className="acordian sm:w-[70%]  w-full ">
+        <Accordion type="single" collapsible className="w-full sm:mt-20 mt-6 ">
           {FAQ.map((ele,index) => (
             <AccordionItem value={`item-${index+1}`} key={index}>
               <AccordionTrigger >
